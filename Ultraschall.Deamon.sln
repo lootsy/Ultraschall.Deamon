@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraschall.Deamon", "Ultraschall.Deamon\Ultraschall.Deamon.csproj", "{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F9B6D711-7AD2-474C-85FC-D9BAF771819C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9B6D711-7AD2-474C-85FC-D9BAF771819C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9B6D711-7AD2-474C-85FC-D9BAF771819C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9B6D711-7AD2-474C-85FC-D9BAF771819C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9B6D711-7AD2-474C-85FC-D9BAF771819C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
