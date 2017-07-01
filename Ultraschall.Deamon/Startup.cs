@@ -1,17 +1,15 @@
 ﻿// Copyright (c) 2017 Ultraschall. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Serilog;
 using Swashbuckle.AspNetCore.Swagger;
+using Ultraschall.Deamon.Data;
 
 namespace Ultraschall.Deamon
 {
@@ -37,6 +35,7 @@ namespace Ultraschall.Deamon
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlite("Filename=./Ultraschall.Deamon"));
             services.AddUltraschall();
             services.AddMvc();
             services.AddSwaggerGen(c =>
@@ -50,7 +49,8 @@ namespace Ultraschall.Deamon
             IApplicationBuilder app,
             IHostingEnvironment env,
             ILoggerFactory loggerFactory,
-            IApplicationLifetime appLifetime)
+            IApplicationLifetime appLifetime,
+            ApplicationDbContext context)
         {
             loggerFactory.AddSerilog();
             loggerFactory.AddDebug();
@@ -63,6 +63,7 @@ namespace Ultraschall.Deamon
             });
 
             appLifetime.ApplicationStopped.Register(Log.CloseAndFlush);
+            context.Database.Migrate();
         }
     }
 }
