@@ -1,8 +1,0 @@
-version: '2'
-
-services:
-  ultraschall.deamon:
-    image: ultraschall.deamon
-    build:
-      context: ./Ultraschall.Deamon
-      dockerfile: Dockerfile

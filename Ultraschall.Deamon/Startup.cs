@@ -42,7 +42,6 @@ namespace Ultraschall.Deamon
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "Ultraschall Deamon API", Version = "v1" });
-                c.IncludeXmlComments("Ultraschall.Deamon.xml");
             });
         }
 
