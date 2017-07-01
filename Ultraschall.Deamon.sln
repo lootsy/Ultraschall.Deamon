@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ultraschall.Deamon", "Ultraschall.Deamon\Ultraschall.Deamon.csproj", "{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ultraschall.Deamon.Tests", "Ultraschall.Deamon.Tests\Ultraschall.Deamon.Tests.csproj", "{FFF5384E-AE5B-456E-B9B2-186486CA1813}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A2F3BC5-4C3B-4E36-A0F1-4812224B4AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF5384E-AE5B-456E-B9B2-186486CA1813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF5384E-AE5B-456E-B9B2-186486CA1813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF5384E-AE5B-456E-B9B2-186486CA1813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF5384E-AE5B-456E-B9B2-186486CA1813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
